@@ -51,5 +51,5 @@ sass/
 │   └── _section.scss
 └── style.scss
 │
-└── index.html.scss
+└── index.html
 ```
