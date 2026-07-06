@@ -1,0 +1,128 @@
+.cta-banner {
+    background-color: $theme-color;
+    border-radius: 30px;
+    overflow: hidden;
+
+    &.style-3 {
+        .cta-mobile {
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+
+            img {
+                @media (max-width: 1200px) {
+                    max-width: 90%;
+                }
+            }
+        }
+
+        .cta-contents { 
+
+            h2 {
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .cta-contents { 
+        position: relative;
+
+
+        @media (max-width: 1399px) {
+            padding-top: 2rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        @media (max-width: 767px) {
+            padding-top: 1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        h2 { 
+            font-size: 60px;
+            line-height: 120%;
+
+            @media (max-width: 1200px) {
+                font-size: 45px;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 32px;
+            }
+
+            @media (max-width: 485px) {
+                font-size: 28px;
+            }
+        }
+    
+        p {
+            padding-right: 30px;
+            margin-bottom: 10px;
+            padding-top: 10px;
+
+            @media (max-width: 767px) {
+                padding-right: 0;
+            }
+        }
+
+        a {
+            margin-top: 40px;
+            display: inline-block;
+            margin-right: 25px;
+
+            @media (max-width: 1400px) {
+                margin-top: 30px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            @media (max-width: 767px) {
+                margin-top: 20px;
+            }
+
+            @media (max-width: 500px) {
+                display: block;
+            }
+        }
+
+    }
+
+    .cta-mobile-app {
+        @media (max-width: 1400px) {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 767px) {
+            margin-top: 20px;
+        }
+        
+        img {
+            position: relative;
+
+            @media (min-width: 768px) {
+                margin-left: -30px;
+                margin-top: -50px;
+            }
+
+            @media (max-width: 767px) {
+                max-width: 80%;
+            }
+        }
+    }
+}
+
+.cta-banner-white-wrap {
+    background-color: #fff;
+    overflow: hidden;
+
+    .cta-banner {
+        overflow: inherit;
+    }
+}

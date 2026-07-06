@@ -1,0 +1,76 @@
+
+// Section Padding
+.section-padding {
+    padding: 6rem 0rem;
+
+    @media (max-width: 991px) {
+        padding: 5rem 0rem;
+    }
+
+    @media (max-width: 767px) {
+        padding: 4rem 0rem;
+    }
+}
+
+.block-contents {
+    position: relative;
+    
+    .section-title {
+        margin-bottom: 50px;
+
+        @media (max-width: 991px) {
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 767px) {
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            margin-top: -14px;
+            font-size: 60px;
+            line-height: 112%;
+
+            @media (max-width: 1200px) {
+                font-size: 50px;
+            }
+
+            @media (max-width: 991px) {
+                font-size: 40px;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 36px;
+                margin-top: -6px;
+            }
+
+            @media (max-width: 485px) {
+                font-size: 30px;
+            }
+        }
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
+}
+
+.section-bg {
+    background-color: $section-bg;
+}
+
+.section-bg-2 {
+    background-color: rgba($color: #080F1E, $alpha: 0.02);
+}
+
+.theme-bg {
+    background: $theme-color;
+
+    h1, h2, h4, h5, h6, a {
+        color: #fff;
+    }
+
+    p, span {
+        color: rgba($color: #fff, $alpha: 0.70);
+    }
+}

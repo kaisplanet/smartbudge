@@ -1,0 +1,89 @@
+// Features Section
+.feature-card {
+    position: relative;
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+
+    &:hover {
+        transform: rotate(-3deg);
+
+        &::before {
+           transform: rotate(3deg);
+        }
+    }
+
+    &::before {
+        transition: all .3s ease-in-out;
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        content: "";
+        background: $theme-color;
+        opacity: .10;
+    }
+
+	&__icon { 
+        width: 6rem;
+        height: 6rem;
+        line-height: 6rem;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        color: $white;
+        font-size: 4rem;
+        margin-bottom: 4rem;
+
+        @media (max-width: 767px) {
+            margin-bottom: 2rem;
+        }
+
+        &::before {
+            background: #fff;
+            opacity: 0.2;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            content: "";
+            left: 0;
+            top: 0;
+            border-radius: 50%;
+            position: absolute;
+        }
+	}
+
+	&__title { 
+
+		h3 { 
+            color: #fff;
+            margin-bottom: 0;
+            font-size: 24px;
+
+            @media (max-width: 767px) {
+                padding-right: 40px;
+            }
+		}
+	}
+
+    &--card1 {
+        background: #4243DC;
+    }
+    
+    &--card2 {
+        background: #EF2469;
+    }
+
+    &--card3 {
+        background: #32C072;
+    }
+
+    &--card4 {
+        background: #FFD44B;
+    }
+
+}

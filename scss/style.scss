@@ -1,0 +1,22 @@
+// ABSTRACTS
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+// BASE
+@import 'base/reset';
+@import 'base/base';
+@import 'base/typography';
+
+// LAYOUT
+@import 'layout/header';
+@import 'layout/section';
+@import 'layout/footer';
+
+// COMPONENTS
+@import 'components/hero';
+@import 'components/features';
+@import 'components/block';
+@import 'components/setup';
+@import 'components/testimonials';
+@import 'components/faqs';
+@import 'components/cta';

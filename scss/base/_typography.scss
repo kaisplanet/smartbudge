@@ -1,0 +1,93 @@
+/* --------------------------------------------
+    Template Default Fonts & Fonts Styles
+ ---------------------------------------------- */
+
+$bi: "bootstrap-icons";
+
+body {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: $textcolor;
+
+    @media (max-width: 767px) {
+        font-size: 1rem;
+    }
+    
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    margin-bottom: 15px;
+    font-weight: 600;    
+    color: $heading-color;
+    line-height: 125%;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 28px;
+
+    @media (max-width: 767px) {
+        font-size: 22px;
+    }
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    outline: none !important;
+    cursor: pointer;
+    font-size: 16px;
+    @include transition(.35s);
+    font-weight: 500;
+}
+
+p {
+    margin: 0px;
+
+    b {
+        color: $heading-color;
+        font-weight: 500;
+    }
+}
+
+.fs-lg {
+    font-size: 80px;
+    text-transform: uppercase;
+    line-height: 1.14;
+
+    @media (min-width: 767px) and (max-width: 991px) {
+        font-size: 42px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 36px;
+    }
+}
+
+
+.fw500 {
+    h1,h2,h3,h4,h5,h6 {
+        font-weight: 500 !important;
+    }
+}

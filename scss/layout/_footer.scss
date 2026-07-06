@@ -1,0 +1,38 @@
+footer {
+    background-color: $white;
+
+	.footer-content {
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+
+        @media (max-width: 991px) {
+            padding-top: 4rem;
+            padding-bottom: 3rem;
+        }
+
+        &__logo { 
+            width: 300px;
+        }
+
+	}
+
+	.footer-copyright { 
+
+		&__content {
+            border-top: 1px solid rgba($color: #080F1E, $alpha: 0.1) !important;
+            padding: 35px 0px;
+
+            @media (max-width: 767px) {
+                padding: 20px 0px;
+                text-align: center;
+            }
+
+            p { 
+                color: $textcolor;
+                font-size: 16px;
+                line-height: 24px;
+
+            }
+       }
+	}
+}

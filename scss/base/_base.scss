@@ -1,0 +1,69 @@
+body,
+html {
+    height: 100%;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+html, body, div, span, img, 
+ol, ul, li, a, p, h1, h2, h3, 
+h4, h5, h6, option, legend, label, 
+table, th, td, tr, article, aside, 
+caption, footer, header, hgroup, 
+mark, nav, section {
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    outline: 0;
+}
+img {
+    max-width: 100%;
+}
+a {
+  &:hover, &:focus, &:active {
+  text-decoration: none;
+  outline: none !important;
+  border: 0;
+  }
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+hr {
+    margin: 0;
+    padding: 0;
+    border-color: #000;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style: none;
+    position: relative;
+}
+a,
+button {
+    position: relative;
+    
+    &:hover,
+    &:focus {
+        outline: 0;
+        text-decoration: none;
+    }
+}
+button {
+    border: 0px;
+}
